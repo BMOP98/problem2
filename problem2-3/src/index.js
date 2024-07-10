@@ -11,8 +11,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 
-app.use('/apiproblem2-3', require('./Apiproblem2-3/problem2-3'));
-app.use('/apiimage', require('./Apiproblem2-3/ApiImage'));
+app.use('/apiproduct', require('./ApiProduct/product'));
+app.use('/apiimage', require('./ApiProduct/ApiImage'));
 // starting the serveR
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
