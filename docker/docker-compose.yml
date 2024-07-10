@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  problem1-1:
+   build: ../problem2-1
+   ports:
+     - 3001
+  problem1-2:
+   build: ../problem2-2
+   ports:
+     - 3002
+  problem1-3:
+   build: ../problem2-3
+   ports:
+     - 3003
